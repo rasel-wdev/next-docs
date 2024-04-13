@@ -1,3 +1,9 @@
+import Landing from "@/components/Landing";
+
 export default function Home() {
-  return <div className="text-3xl underline">Hello World</div>;
+  return (
+    <div>
+      <Landing />
+    </div>
+  );
 }
