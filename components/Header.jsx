@@ -2,6 +2,7 @@ import Logo from "./Logo";
 import NavBar from "./NavBar";
 
 import Image from "next/image";
+import Search from "./Search";
 
 export default function Header({ docs }) {
   return (
@@ -14,9 +15,7 @@ export default function Header({ docs }) {
       >
         <div className="container flex h-14 items-center justify-between gap-12">
           <div className="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition dark:bg-white/7.5"></div>
-
-          {/* <Search /> */}
-
+          <Search />
           {/* <!-- Mobile Responsive Header Starts --> */}
           <div className="flex items-center gap-5 lg:hidden">
             <button

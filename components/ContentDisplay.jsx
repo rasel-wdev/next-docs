@@ -1,4 +1,5 @@
 import { getDocumentContent } from "@/lib/doc";
+
 import Link from "next/link";
 import Tag from "./Tag";
 
@@ -11,11 +12,11 @@ export default async function ContentDisplay({ id }) {
         <h1>{documentContent.title}</h1>
         <div>
           <span>Published on: {documentContent.date}</span> by{" "}
-          <Link href={`/author/${documentContent.author}`}>
+          <Link href={`/authors/${documentContent.author}`}>
             {documentContent.author}
           </Link>{" "}
           under the{" "}
-          <Link href={`/categories/${documentContent.categories}`}>
+          <Link href={`/categories/${documentContent.category}`}>
             {documentContent.category}
           </Link>{" "}
           category.
@@ -24,6 +25,7 @@ export default async function ContentDisplay({ id }) {
           {documentContent.tags &&
             documentContent.tags.map((tag) => <Tag key={tag} tag={tag} />)}
         </div>
+
         <div
           className="lead"
           dangerouslySetInnerHTML={{ __html: documentContent.contentHtml }}

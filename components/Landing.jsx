@@ -20,9 +20,9 @@ export default function Landing() {
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
-                  href="#"
+                  href="/docs/introduction"
                   className="inline-flex justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-700"
-                  target="_blank"
+                  // target="_blank" open the new link in the same tab
                 >
                   <span>Get Started</span>
                 </Link>
