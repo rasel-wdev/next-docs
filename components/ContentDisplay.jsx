@@ -8,7 +8,7 @@ export default async function ContentDisplay({ id }) {
 
   return (
     <div>
-      <article class="prose dark:prose-invert">
+      <article className="prose dark:prose-invert">
         <h1>{documentContent.title}</h1>
         <div>
           <span>Published on: {documentContent.date}</span> by{" "}
@@ -23,11 +23,11 @@ export default async function ContentDisplay({ id }) {
         </div>
         <div>
           {documentContent.tags &&
-            documentContent.tags.map((tag) => <Tag key={tag} tag={tag} />)}
+            documentContent.tags.map((tag) => <Tag key={tag} tag={tag} />)}{" "}
         </div>
 
         <div
-          className="lead"
+          classNameName="lead"
           dangerouslySetInnerHTML={{ __html: documentContent.contentHtml }}
         />
       </article>

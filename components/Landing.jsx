@@ -22,7 +22,7 @@ export default function Landing() {
                 <Link
                   href="/docs/introduction"
                   className="inline-flex justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-700"
-                  // target="_blank" open the new link in the same tab
+                  target="_blank"
                 >
                   <span>Get Started</span>
                 </Link>
